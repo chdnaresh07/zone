@@ -1,0 +1,92 @@
+
+
+    add to favorites
+    mark as viewed
+    add a note
+
+How to create a Sign Up form registration with PHP and MySQL
+In this article we will discuss how we can create a sign up form registration with PHP and MySQL.
+ 1036
+ 26
+ 16
+ 132K
+ Like (8)
+ (1)
+
+Much of the websites have a registration form for your users to sign up and thus may benefit from some kind of privilege within the site. In this article we will see how to create a registration form in PHP and MySQL.
+
+We will use simple tags and also we will use table tag to design the Sign-Up.html webpage. Let’s start:
+
+Listing 1: sign-up.html
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign-Up</title>
+</head>
+<body id="body-color">
+<div id="Sign-Up">
+<fieldset style="width:30%"><legend>Registration Form</legend>
+<table border="0">
+<tr>
+<form method="POST" action="connectivity-sign-up.php">
+<td>Name</td><td> <input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Email</td><td> <input type="text" name="email"></td>
+</tr>
+<tr>
+<td>UserName</td><td> <input type="text" name="user"></td>
+</tr>
+<tr>
+<td>Password</td><td> <input type="password" name="pass"></td>
+</tr>
+<tr>
+<td>Confirm Password </td><td><input type="password" name="cpass"></td>
+</tr>
+<tr>
+<td><input id="button" type="submit" name="submit" value="Sign-Up"></td>
+</tr>
+</form>
+</table>
+</fieldset>
+</div>
+</body>
+</html>
+
+Output of sing-up.html webpage is looking simple without CSS styles
+
+Figure 1: Output of sing-up.html webpage is looking simple without CSS styles
+Description of sing-in.html webpage:
+
+As you can see the Figure 1, there is a Registration form and it is asking few data about user. These are the common data which ask by any website from his users or visitors to create and ID and Password. We used table tag because to show the form fields on the webpage in a arrange form as you can see them on Figure 1. It’s looking so simple because we yet didn’t used CSS Style on it now let’s we use CSS styles and link the CSS style file with sing-up.html webpage.
+
+Listing 2: style.css
+
+/*CSS File For Sign-Up webpage*/
+#body-color{
+background-color:#6699CC;
+}
+#Sign-Up{
+background-image:url('sign-up.png');
+background-size:500px 500px;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+margin-top:150px;
+margin-bottom:150px;
+margin-right:150px;
+margin-left:450px;
+padding:9px 35px; 
+}
+#button{
+border-radius:10px;
+width:100px;
+height:40px;
+background:#FF00FF;
+font-weight:bold;
+font-size:20px;
+}
+
+
+Read more: http://mrbool.com/how-to-create-a-sign-up-form-registration-with-php-and-mysql/28675#ixzz4BYi4DEvY
